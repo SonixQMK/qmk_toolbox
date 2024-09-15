@@ -21,6 +21,7 @@ namespace QMK_Toolbox.Helpers
             "mdloader.exe",
             "teensy_loader_cli.exe",
             "wb32-dfu-updater_cli.exe",
+            "sonixflasher.exe",
             "libftdi1.dll",
             "libhidapi-0.dll",
             "libusb-0-1-4.dll",
