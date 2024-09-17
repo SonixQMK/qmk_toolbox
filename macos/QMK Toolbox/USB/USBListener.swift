@@ -134,6 +134,8 @@ class USBListener: BootloaderDeviceDelegate {
             return USBTinyISPDevice(usbDevice: usbDevice)
         case .wb32Dfu:
             return WB32DFUDevice(usbDevice: usbDevice)
+        case .sn32Dfu:
+            return SN32DFUDevice(usbDevice: usbDevice)
         case .none:
             return usbDevice
         }
@@ -227,6 +229,14 @@ class USBListener: BootloaderDeviceDelegate {
         case 0x342D: // WestBerryTech
             if productID == 0xDFA0 {
                 return .wb32Dfu
+            }
+        case 0x0c45: // Sonix
+            switch productID {
+            // SN32F260, SN32F240b, SN32F240
+            case 0x7010, 0x7040, 0x7900:
+                return .sn32Dfu
+            default:
+                break
             }
         default:
             break

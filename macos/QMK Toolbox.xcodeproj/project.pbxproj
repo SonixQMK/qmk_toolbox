@@ -18,6 +18,8 @@
 		3066649628392281007C93C8 /* libhidapi.0.14.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 3AFD4BCF281AB83C00ADCB65 /* libhidapi.0.14.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3066649828392281007C93C8 /* libusb-0.1.4.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09D79CBB1FB8A6490086ABF6 /* libusb-0.1.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3066649A28392281007C93C8 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 09D79CB51FB0DD7F0086ABF6 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		340BC6FF2C99E47E009C2697 /* SN32DFUDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BC6FE2C99E47E009C2697 /* SN32DFUDevice.swift */; };
+		340BC7012C99F2E1009C2697 /* sonixflasher in Resources */ = {isa = PBXBuildFile; fileRef = 340BC7002C99F2E1009C2697 /* sonixflasher */; };
 		3A128567283D3F0800173A80 /* MicrocontrollerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A128566283D3F0800173A80 /* MicrocontrollerSelector.swift */; };
 		3A32CF4B28412C420016D7B7 /* BootloaderDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A32CF4A28412C420016D7B7 /* BootloaderDevice.swift */; };
 		3A32CF4D28413E6B0016D7B7 /* HalfKayDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A32CF4C28413E6B0016D7B7 /* HalfKayDevice.swift */; };
@@ -110,6 +112,8 @@
 		098AEDFA1F5E45C300CA054D /* dfu-util */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "dfu-util"; sourceTree = "<group>"; };
 		09D79CB51FB0DD7F0086ABF6 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
 		09D79CBB1FB8A6490086ABF6 /* libusb-0.1.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-0.1.4.dylib"; sourceTree = "<group>"; };
+		340BC6FE2C99E47E009C2697 /* SN32DFUDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SN32DFUDevice.swift; sourceTree = "<group>"; };
+		340BC7002C99F2E1009C2697 /* sonixflasher */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sonixflasher; sourceTree = "<group>"; };
 		3A128566283D3F0800173A80 /* MicrocontrollerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrocontrollerSelector.swift; sourceTree = "<group>"; };
 		3A32CF4A28412C420016D7B7 /* BootloaderDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootloaderDevice.swift; sourceTree = "<group>"; };
 		3A32CF4C28413E6B0016D7B7 /* HalfKayDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfKayDevice.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 		3A53FB5B268A33F10020BAB0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				340BC7002C99F2E1009C2697 /* sonixflasher */,
 				09522BBA1F6216BA00AEBC5E /* avrdude.conf */,
 				09522BB21F61E32700AEBC5E /* mcu-list.txt */,
 				C93A0FF32292232D0006C88F /* reset.eep */,
@@ -288,6 +293,7 @@
 				3A32CF5C2841427E0016D7B7 /* LUFAHIDDevice.swift */,
 				3A32CF68284145900016D7B7 /* LUFAMSDevice.swift */,
 				3A32CF5E284142D10016D7B7 /* STM32DFUDevice.swift */,
+				340BC6FE2C99E47E009C2697 /* SN32DFUDevice.swift */,
 				3A32CF60284143990016D7B7 /* STM32DuinoDevice.swift */,
 				3A32CF62284143EC0016D7B7 /* USBAspDevice.swift */,
 				3A32CF642841445E0016D7B7 /* USBTinyISPDevice.swift */,
@@ -361,6 +367,7 @@
 				3AA5D3472803FCE1008121E4 /* Colors.xcassets in Resources */,
 				3AE86EF8294C9CEC00008D3E /* Main.storyboard in Resources */,
 				3A8F9F0226E7501E007480A7 /* KeyView.xib in Resources */,
+				340BC7012C99F2E1009C2697 /* sonixflasher in Resources */,
 				09522BBB1F6216BA00AEBC5E /* avrdude.conf in Resources */,
 				09522BB31F61E32700AEBC5E /* mcu-list.txt in Resources */,
 				C93A0FF42292232E0006C88F /* reset.eep in Resources */,
@@ -394,6 +401,7 @@
 				3A32CF5B284142300016D7B7 /* KiibohdDevice.swift in Sources */,
 				3A32CF5D2841427E0016D7B7 /* LUFAHIDDevice.swift in Sources */,
 				3A32CF69284145900016D7B7 /* LUFAMSDevice.swift in Sources */,
+				340BC6FF2C99E47E009C2697 /* SN32DFUDevice.swift in Sources */,
 				3A32CF5F284142D10016D7B7 /* STM32DFUDevice.swift in Sources */,
 				3A32CF61284143990016D7B7 /* STM32DuinoDevice.swift in Sources */,
 				3A32CF63284143EC0016D7B7 /* USBAspDevice.swift in Sources */,
