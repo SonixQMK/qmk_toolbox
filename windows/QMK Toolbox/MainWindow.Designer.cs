@@ -516,7 +516,7 @@
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MinimumSize = new System.Drawing.Size(949, 805);
             Name = "MainWindow";
-            Text = "QMK Toolbox";
+            Text = "SonixQMK Toolbox";
             FormClosing += MainWindow_FormClosing;
             FormClosed += MainWindow_FormClosed;
             Load += MainWindow_Load;

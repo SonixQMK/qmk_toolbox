@@ -38,7 +38,7 @@
             this.toolboxLabel.Name = "toolboxLabel";
             this.toolboxLabel.Size = new System.Drawing.Size(232, 13);
             this.toolboxLabel.TabIndex = 0;
-            this.toolboxLabel.Text = "QMK Toolbox";
+            this.toolboxLabel.Text = "SonixQMK Toolbox";
             this.toolboxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // githubLink

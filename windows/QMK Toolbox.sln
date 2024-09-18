@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QMK Toolbox", "QMK Toolbox\QMK Toolbox.csproj", "{1F8BE719-CB0D-4A67-8422-B0C3A1B823F7}"
+Project("{6ae29d1a-17b3-401a-bef2-5eac4604887c}") = "SonixQMK Toolbox", "QMK Toolbox\QMK Toolbox.csproj", "{1F8BE719-CB0D-4A67-8422-B0C3A1B823F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

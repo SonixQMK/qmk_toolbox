@@ -33,8 +33,8 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: qmk_toolbox.exe
-        path: windows/QMK Toolbox/bin/Release/win-x64/publish/qmk_toolbox.exe
+        name: sonixqmk_toolbox.exe
+        path: windows/QMK Toolbox/bin/Release/win-x64/publish/sonixqmk_toolbox.exe
 
     - uses: actions/upload-artifact@v4
       with:
@@ -107,7 +107,7 @@ jobs:
         with:
           name: ${{ github.event.release.name }}
           files: |
-            ./qmk_toolbox.exe/qmk_toolbox.exe
+            ./sonixqmk_toolbox.exe/sonixqmk_toolbox.exe
             ./qmk_toolbox_install.exe/qmk_toolbox_install.exe
             ./QMK.Toolbox.app.zip/QMK.Toolbox.app.zip
             ./QMK.Toolbox.pkg/QMK.Toolbox.pkg
@@ -130,7 +130,7 @@ jobs:
           prerelease: true
           title: "Latest Beta"
           files: |
-            ./qmk_toolbox.exe/qmk_toolbox.exe
+            ./sonixqmk_toolbox.exe/sonixqmk_toolbox.exe
             ./qmk_toolbox_install.exe/qmk_toolbox_install.exe
             ./QMK.Toolbox.app.zip/QMK.Toolbox.app.zip
             ./QMK.Toolbox.pkg/QMK.Toolbox.pkg
